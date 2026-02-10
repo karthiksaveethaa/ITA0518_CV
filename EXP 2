@@ -1,0 +1,8 @@
+import cv2
+
+img = cv2.imread(r"C:\Users\Administrator\Pictures\WhatsApp Image 2026-02-07 at 9.30.28 AM.jpeg")
+blur = cv2.GaussianBlur(img,(15,15),0)
+cv2.imshow("Original",img)
+cv2.imshow("Gaussian Blur",blur)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
